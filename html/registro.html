@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/arreglo.css">
+        <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
+        <title>Kinexgo - Contacto</title>
+    </head>
+<body>
+    <header class="encabezado">
+        <img id="logo" src="../assets/logoKinexgo.png" alt="kinesiologia">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="profesionales.html">Profesionales</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="registro.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+    <h1>Contacto</h1>
+    <form method="GET">
+        <div class="formulario">
+            <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Juan">
+            <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Perez">
+        </div>
+        <div class="formulario">
+            <label for="numeroContacto">Numero de Contacto</label>
+                <input type="number" name="numeroContacto" placeholder="+56925856395">
+            <label for="mail">Correo Electronico</label>
+                <input type="email" name="mail" placeholder="jperez@mail.com">
+        </div>
+        <div class="formulario">
+            <label for="sexo">Hombre</label>
+            <input type="radio" name="sexo">
+            <label for="sexo">Mujer</label>
+            <input type="radio" name="sexo">
+        </div>
+        <div class="formulario">
+            <label for="region">Region de</label>
+                <select name="region">
+                    <option value="1">Arica y Parinacota</option>
+                    <option value="2">Tarapaca</option>
+                    <option value="3">Antofagasta</option>
+                    <option value="4">Atacama</option>
+                    <option value="5">Coquimbo</option>
+                    <option value="6">Valparaiso</option>
+                    <option value="7">Metropolitana</option>
+                    <option value="8">Libertador General Bernado Ohiggins</option>
+                    <option value="9">Maule</option>
+                    <option value="10">Ñuble</option>
+                    <option value="11">Biobio</option>
+                    <option value="12">Araucania</option>
+                    <option value="13">Rios</option>
+                    <option value="14">Lagos</option>
+                    <option value="15">Aysen</option>
+                    <option value="16">Magallanes</option>
+            </select>
+        </div>
+        <div class="formulario">
+            <label for="comentario"></label>
+            <textarea name="texto" rows="20" cols="95" placeholder="Escriba su comentario"></textarea>
+        </div>
+        <div class="formulario">
+            <label for="acepta">Acepta terminos y condiciones</label>
+                <input type="checkbox" name="acepta" value="1">
+        </div>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpiar">
+</form>
+<footer>
+    <ul class="redes"> <!-- Las redes sociales seran presentadas por iconos de manera horizontal-->
+       <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+   </ul>
+   <p id="derechos">© Copyright todos los derechos reservados 2021</p>
+</footer>
+</body>
+</html>

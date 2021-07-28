@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Encabezado*/
+
+div.encabezado__logo{
+    img{
+        max-width: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: auto;
+    }
+    
+}
+
+.encabezado__menu{
+    ul{
+        li{
+            margin-top: -35px;
+            a{
+                background-color: #FCA311;
+            }
+            a:hover{
+                background-color: #14213D;
+                transition: 1s;
+            }
+        }
+    }
+}
+/*General*/
+div.texto__titulo{
+    h1{
+        font-size: 50px;
+        text-align: center;
+        color: #000000;
+        padding-top: 20px;
+    }
+}
+p{
+    font-size: 18px;
+    text-align: center;
+}
+section.mapa__ubicacion{
+    text-align: center;
+}
+section.quienesSomos__historia{
+    p{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+/*index videos*/
+
+section.body__video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+        article{
+            text-align: center;
+        }
+}
+/*Footer*/
+li{
+    list-style: none;
+}
+i{
+    font-size: 2rem;
+    color: #14213D;
+    margin: 0.2rem;
+}
+.footer__redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #FCA311, #E5E5E5);
+    max-width: 100% ;
+}
+/*profesionales*/
+
+div.card{
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+/*Servicios*/
+div.accordion{
+    margin-bottom: 30px;
+}
+/*Contacto*/
+div.formulario{
+    color: #2C2B3C;
+    text-align: center;
+        }
+        select{
+            color: #474574;
+        }
+
+input[type=submit],[type=reset]{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30vw;
+    margin-bottom: 20px;
+}

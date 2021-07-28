@@ -1,0 +1,7 @@
+/*Logo*/
+div.encabezado__logo{
+    max-height: 1vh;
+}
+.encabezado__logo img{
+    max-width: 15vh;
+}
