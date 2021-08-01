@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Generales*/
+p{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2C2B3C;
+    text-align: center;
+}
+h1, h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #474574;
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background-color: #EAE8FB;
+}
+/*Encabezado*/
+#logo{
+    max-width: 10vw;
+}
+    /*Menu*/
+a{
+    text-decoration: none;
+    color: #EAE8FB;
+}
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #2C2B3C;
+}
+nav ul li:hover{
+    background-color: #474574;
+    transition: all 1s;
+}
+ul li{
+    padding: 15px;
+}
+/*Informacion Index*/
+.img-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 33vw;
+}
+/*Grids index*/
+section.video{
+    display: grid;
+    justify-self: stretch;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 2fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+        "h2 h2"
+        "video1 video2";
+}
+h2{
+    grid-area: h2;
+}
+article.video1{
+    grid-area: video1;
+}
+article.video2{
+    grid-area: video2;
+}
+/*Quienes Somos*/
+#historiaEmpresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#mapa>iframe{
+    margin-left: 35vw;
+    padding-top: 10px;
+}
+/*Profesionales*/
+article.profesional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+article img{
+    max-width: 100%;
+}
+/*Servicios*/
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    width: 100%;
+    border: 1px solid #000;
+    color: #EAE8FB;
+    background-color: #474574;
+    margin-bottom: 15px;
+}
+caption{
+    font-size: 28px;
+    color: #474574;
+}
+th,td{
+    width: 25%;
+    text-align: left;
+    border: 1px solid #000;
+}
+table li{
+    list-style-type: none;
+}
+/*Contacto*/
+div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #2C2B3C;
+    margin-left: 30vw;
+    padding: 15px;
+}
+select{
+    color: #474574;
+}
+input[type=submit],[type=reset]{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30vw;
+    margin-bottom: 20px;
+}
+/*footer*/
+i{
+    font-size: 2rem;
+    color: #EAE8FB;
+    margin: 0.2rem;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #474574, #2C2B3C);
+    max-width: 100% ;
+}
+/*mobile first*/
+@media (max-width: 600px){
+    /*header*/
+    #logo{
+        max-width: 0;
+    }
+    a{
+        text-decoration: none;
+        color: #EAE8FB;
+    }
+    li{
+        list-style: none;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #2C2B3C;
+    }
+    nav ul li:hover{
+        background-color: #474574;
+        transition: all 1s;
+    }
+    ul li{
+        padding: 15px;
+    }
+    /*carrusel*/
+    #carrusel{
+        max-width: 600px;
+    }
+}
+@media (max-width: 768px){
+    /*header*/
+    #logo{
+        max-width: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: #EAE8FB;
+    }
+    li{
+        list-style: none;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 740px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #2C2B3C;
+    }
+    nav ul li:hover{
+        background-color: #474574;
+        transition: all 1s;
+    }
+    ul li{
+        padding: 15px;
+    }
+    /*carrusel*/
+    #carrusel{
+        max-width: 600px;
+    }
+    section#video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: 1024px){
+    #logo{
+        width: 10vw;
+    }
+    a{
+        text-decoration: none;
+        color: #EAE8FB;
+    }
+    li{
+        list-style: none;
+    }
+    i{
+        font-size: 2rem;
+        color: #EAE8FB;
+        margin: 0.2rem;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #2C2B3C;
+    }
+    nav ul li:hover{
+        background-color: #474574;
+        transition: all 1s;
+    }
+    ul li{
+        padding: 15px;
+    }
+//
+    /*General*/
+
+h1, p{
+    text-align: center;
+    padding: 10vh;
+}
+/*Grid video*/
+section.video{
+    display: grid;
+    justify-self: stretch;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+        "section section"
+        "video1 video2";
+}
+article.video1{
+    grid-area: video1;
+}
+article.video2{
+    grid-area: video2;
+}
+/*Footer*/
+li{
+    list-style: none;
+}
+i{
+    font-size: 2rem;
+    color: #474574;
+    margin: 0.2rem;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #474574, #2C2B3C);
+    max-width: 100% ;
+}
+/*mobile first*/
+@media (max-width: 768px){
+#logo img{
+    max-width: 0vh;
+}
+#menu{
+    display: flexbox;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+}
+section.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
