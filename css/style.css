@@ -23,12 +23,14 @@ div.texto__titulo h1 {
   text-align: center;
   color: #000000;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  animation: cubic-bezier(0.39, 0.575, 0.565, 1); }
 
 p {
   font-size: 18px;
   text-align: center; }
 
+/*Quienes Somos*/
 section.mapa__ubicacion {
   text-align: center; }
 
@@ -64,6 +66,9 @@ i {
   justify-content: center;
   background-image: linear-gradient(to left, #FCA311, #E5E5E5);
   max-width: 100%; }
+
+footer p {
+  font-size: 1rem; }
 
 /*profesionales*/
 div.card {
